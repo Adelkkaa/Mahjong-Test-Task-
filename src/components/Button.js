@@ -49,7 +49,7 @@ export const Button = ({
     if (countOfClicks > 1) {
       setDisabled(true);
     }
-    if (!visible && countOfClicks === 0) {
+    if (!visible && countOfClicks === 0 && classBtn !== 'black') {
       setDisabled(false);
     }
   }, [countOfClicks]);
